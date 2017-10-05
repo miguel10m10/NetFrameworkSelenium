@@ -17,8 +17,6 @@ namespace ToolsQA
             // Find the element that's ID attribute is 'account'(My Account) 
             driver.FindElement(By.XPath(".//*[@id='account']/a")).Click();
 
-
-
             // Find the element that's ID attribute is 'log' (Username)
             // Enter Username on the element found by above desc.
             driver.FindElement(By.Id("log")).SendKeys("testuser_1");
