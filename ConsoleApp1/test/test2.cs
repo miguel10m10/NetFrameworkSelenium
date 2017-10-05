@@ -25,6 +25,7 @@ namespace ToolsQA
             // Enter Password on the element found by the above desc.
             driver.FindElement(By.Id("pwd")).SendKeys("Test@123");
 
+
             // Now submit the form.
             driver.FindElement(By.Id("login")).Click();
 

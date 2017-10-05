@@ -9,9 +9,6 @@ namespace ToolsQA
     {
         IWebDriver driver = null;
 
-
-
-
         [SetUp]
         public void Initilize()
         {
