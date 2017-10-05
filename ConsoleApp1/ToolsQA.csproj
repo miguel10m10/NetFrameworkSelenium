@@ -60,6 +60,8 @@
   <ItemGroup>
     <Compile Include="testt\extentReport\basic.cs" />
     <Compile Include="testt\extentReport\ExtentReportNUnit\Class1.cs" />
+    <Compile Include="testt\herenciaTest\BaseTest.cs" />
+    <Compile Include="testt\herenciaTest\TestHer1.cs" />
     <Compile Include="testt\test\test1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="testt\test\test2.cs" />
