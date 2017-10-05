@@ -29,6 +29,10 @@ public abstract class ExtentBase
     public void FixtureInit()
     {
         extent = ExtentManager.Instance;
+        extent
+            .AddSystemInfo("Host Name", "Miguel")
+            .AddSystemInfo("Environment", "QA")
+            .AddSystemInfo("User Name", "Miguel DAlessio");
         extent.LoadConfig(@"C:\Users\mdalessio\source\repos\ConsoleApp1\ConsoleApp1\" + "extent-config.xml");
     }
 
