@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using System;
 
 namespace ToolsQA
 {
@@ -10,6 +11,8 @@ namespace ToolsQA
         public void Test2()
         {
             IWebDriver driver = null;
+            Console.WriteLine("Hello World!");
+            Console.ReadKey();
             FirefoxDriverService service = FirefoxDriverService.CreateDefaultService(@"C:\Users\mdalessio\Desktop", "geckodriver.exe");
             driver = new FirefoxDriver(service);
             driver.Url = "http://www.store.demoqa.com";
@@ -24,9 +27,6 @@ namespace ToolsQA
             // Find the element that's ID attribute is 'pwd' (Password)
             // Enter Password on the element found by the above desc.
             driver.FindElement(By.Id("pwd")).SendKeys("Test@123");
-
-
-       
 
             // Now submit the form.
             driver.FindElement(By.Id("login")).Click();

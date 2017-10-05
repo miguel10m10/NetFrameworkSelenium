@@ -12,7 +12,6 @@ namespace ToolsQA
         [SetUp]
         public void Initilize()
         {
-
             FirefoxDriverService service = FirefoxDriverService.CreateDefaultService(@"C:\Users\mdalessio\Desktop", "geckodriver.exe");
              driver = new FirefoxDriver(service);
         }
