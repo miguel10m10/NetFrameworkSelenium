@@ -1,11 +1,15 @@
 ﻿using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using RelevantCodes.ExtentReports;
+using System;
 
 internal class ExtentManager
 {
+
+    public static String pathProject = AppDomain.CurrentDomain.BaseDirectory.Replace("\\bin\\Debug", "");
+
     private static readonly ExtentReports _instance =
-        new ExtentReports(@"C:\Users\mdalessio\source\repos\ConsoleApp1\ConsoleApp1\test-output\extent.html", DisplayOrder.OldestFirst);
+        new ExtentReports(pathProject+"test-output/extent.html", DisplayOrder.OldestFirst);
 
     static ExtentManager() { }
 
@@ -15,9 +19,15 @@ internal class ExtentManager
     {
         get
         {
-            return _instance;
+            return Instance1;
         }
     }
+
+    public static ExtentReports Instance1 => Instance3;
+
+    public static ExtentReports Instance2 => Instance3;
+
+    public static ExtentReports Instance3 => _instance;
 }
 
 public abstract class ExtentBase
