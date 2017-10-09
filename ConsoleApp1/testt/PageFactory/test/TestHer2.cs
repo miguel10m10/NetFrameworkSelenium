@@ -7,12 +7,12 @@ using RelevantCodes.ExtentReports;
 
 namespace ConsoleApp1.testt.herenciaTest
 {
-    class TestHer1 : BaseTest
+    class TestHer2 : BaseTest
     {
         [Test]
-        public void TestPF1()
+        public void TestPF2()
         {
-            test = extent.StartTest("PassTest");
+            test = extent.StartTest("PassTest2");
             test.Log(LogStatus.Info, "START");
 
 
