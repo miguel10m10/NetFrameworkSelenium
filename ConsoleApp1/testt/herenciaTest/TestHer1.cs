@@ -10,7 +10,7 @@ namespace ConsoleApp1.testt.herenciaTest
     class TestHer1 : BaseTest
     {
         [Test]
-        public void Test1()
+        public void Test1675656()
         {
             driver.Navigate().GoToUrl("https://www.google.com");
         }
