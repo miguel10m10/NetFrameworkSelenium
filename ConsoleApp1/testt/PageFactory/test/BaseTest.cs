@@ -10,6 +10,7 @@ using System.IO;
 using System.Diagnostics;
 using System.Reflection;
 using RelevantCodes.ExtentReports;
+using System.Configuration;
 
 namespace ConsoleApp1.testt.herenciaTest
 {
@@ -27,7 +28,7 @@ namespace ConsoleApp1.testt.herenciaTest
 
             FirefoxDriverService service = FirefoxDriverService.CreateDefaultService(pathDriver, "drivers/win/geckodriver.exe");
             driver = new FirefoxDriver(service);
-            driver.Navigate().GoToUrl("http://www.store.demoqa.com");
+            driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["URL"]);
 
         }
         [TearDown]
