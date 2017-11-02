@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using NUnit.Framework;
 
-namespace ToolsQA
+namespace UnitTests
 {
     class test1
     {
@@ -16,7 +16,7 @@ namespace ToolsQA
              driver = new FirefoxDriver(service);
         }
         [Test]
-        public void Test1()
+        public void Test1Simple()
         {
             driver.Navigate().GoToUrl("https://www.google.com");
         }

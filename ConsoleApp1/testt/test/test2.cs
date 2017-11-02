@@ -3,12 +3,12 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using System;
 
-namespace ToolsQA
+namespace UnitTests
 {
     class test2
     {
         [Test]
-        public void Test2()
+        public void Test2Simple()
         {
             IWebDriver driver = null;
             Console.WriteLine("Hello World!");

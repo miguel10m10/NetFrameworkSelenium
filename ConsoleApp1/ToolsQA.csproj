@@ -75,6 +75,7 @@
     <Compile Include="testt\test\test2.cs" />
     <Compile Include="testt\test\Test3Assertions.cs" />
     <Compile Include="testt\test\test4Warning.cs" />
+    <Compile Include="testt\test\test5InterfaceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

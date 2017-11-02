@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.testt.test
+namespace UnitTests
 {
     class test4Warning
     {
@@ -14,6 +14,7 @@ namespace ConsoleApp1.testt.test
         {
             Warn.If(2 + 2 != 5);
             Warn.If(2 + 2, Is.Not.EqualTo(5));
+            Warn.Unless(2 + 2 == 5);
          
         }
     }
